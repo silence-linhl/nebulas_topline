@@ -1,12 +1,9 @@
-/* ==== Google font ==== */
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700,900);
-@import url("http://fonts.googleapis.com/css?family=Ek+Mukta:400,600,700");
 
 /* ---------------------------------------------------------------------------- */
 /* ------------------------------------Html-Body------------------------------- */
 /* ---------------------------------------------------------------------------- */
 body {
-  font-family: "Ek Mukta", sans-serif;
+  font-family: sans-serif;
   color: #666;
   background: url(../images/wood.png) no-repeat;
   width: 100%;
@@ -83,7 +80,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: sans-serif;
   font-weight: 600;
   color: #111;
   margin-bottom: 10px;
@@ -242,7 +239,7 @@ header {
   padding: 10px 20px;
 }
 #page-content h3.title-item {
-  font-family: "Ek Mukta", sans-serif;
+  font-family: sans-serif;
   font-size: 28px;
   margin: 7px 0 5px;
 }
