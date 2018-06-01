@@ -1,4 +1,4 @@
-var dappAddress = "n1hqDXkgL7ikjna3r3vqj3uo4b7eJdge1qQ ";
+var dappAddress = "n1hqDXkgL7ikjna3r3vqj3uo4b7eJdge1qQ";
 var from = "n1Knm7DUiDiUiu463q2xGPFqhtwmjYfyNov";
 window.onload = function() {
   var input = document.getElementById("InputFile");
