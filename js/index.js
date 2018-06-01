@@ -10,7 +10,8 @@ window.onload = function() {
     input.addEventListener("change", readFile);
   }
   if (typeof webExtensionWallet === "undefined") {
-    $("#noExtension").attr("style", "display:block;");
+     $("#noExtension1").attr("style", "display:block;");
+     $("#noExtension2").attr("style", "display:block;");
     $("#submitbutton").attr("disabled", true);
   } else {
     $("#submitbutton").attr("disabled", false);
@@ -156,10 +157,6 @@ function getPublishingBlog() {
     .then(function(resp) {
       BlogShow(resp);
     });
-  // .catch(function(err) {
-  //   //cbSearch(err)
-  //   console.log("error:" + err);
-  // });
 }
 
 var BlogShow = function(resp) {
@@ -172,6 +169,8 @@ var BlogShow = function(resp) {
     if (result.length == 1) {
       topLine = result[0];
     } else if (result.length == 2) {
+       $("#noExtension3").attr("style", "display:block;");
+      $("#submitbutton").attr("disabled", true);
       if (result[0].expiredTime < result[1].expiredTime) {
         topLine = result[0];
         $("#nexttopline").text(
@@ -211,26 +210,6 @@ var BlogShow = function(resp) {
       }
     });
     getComments(id);
-    console.log(
-      "id:" +
-        id +
-        "  title:" +
-        title +
-        "  content:" +
-        content +
-        "    publishTime:" +
-        publishTime +
-        "    expiredTime:" +
-        expiredTime +
-        "   now:" +
-        Date.parse(new Date()) +
-        "  author:" +
-        author +
-        "  like:" +
-        like +
-        "picture:"
-      // picture
-    );
   }
 };
 
