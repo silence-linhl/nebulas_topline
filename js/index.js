@@ -1,4 +1,4 @@
-var dappAddress = "n1yZicaDdLnXSggQiQ5sNhcwMG4DwetDmqH";//"n1jxW6mRZeGkAuNj44sQjAHJ45zHSoHVj8J";
+var dappAddress = "n1vMkAPfJkxp3UZ6tZ3hxFLeZ2uxxXamEqg";
 var from = "n1Knm7DUiDiUiu463q2xGPFqhtwmjYfyNov";
 //hash：28e772d243a79c41fac01848cfadad342ef1ff394106869b84916e7b1cfa81c0
 window.onload = function() {
