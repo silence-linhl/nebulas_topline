@@ -1,6 +1,5 @@
-var dappAddress = "n1vMkAPfJkxp3UZ6tZ3hxFLeZ2uxxXamEqg";
+var dappAddress = "n1hqDXkgL7ikjna3r3vqj3uo4b7eJdge1qQ ";
 var from = "n1Knm7DUiDiUiu463q2xGPFqhtwmjYfyNov";
-//hash：28e772d243a79c41fac01848cfadad342ef1ff394106869b84916e7b1cfa81c0
 window.onload = function() {
   var input = document.getElementById("InputFile");
   var img_area = document.getElementById("img_area");
@@ -97,7 +96,7 @@ var createItem = function(comment) {
 function getComments(id) {
   var nebulas = require("nebulas"),
     neb = new nebulas.Neb();
-  neb.setRequest(new nebulas.HttpRequest("https://testnet.nebulas.io"));
+  neb.setRequest(new nebulas.HttpRequest("https://mainnet.nebulas.io"));
   var value = "0";
   var nonce = "0";
   var gas_price = "1000000";
@@ -139,7 +138,7 @@ var commentShow = function(resp) {
 function getPublishingBlog() {
   var nebulas = require("nebulas"),
     neb = new nebulas.Neb();
-  neb.setRequest(new nebulas.HttpRequest("https://testnet.nebulas.io"));
+  neb.setRequest(new nebulas.HttpRequest("https://mainnet.nebulas.io"));
   var value = "0";
   var nonce = "0";
   var gas_price = "1000000";
